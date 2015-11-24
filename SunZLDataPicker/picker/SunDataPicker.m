@@ -38,6 +38,7 @@
     _title.textAlignment=NSTextAlignmentCenter;
     _title.text=@"请选择";
     //test pull push commit
+    //test master
     _picker=[[UIPickerView alloc]initWithFrame:CGRectMake(10,0, frame.size.width-20, frame.size.height)];
     _picker.delegate=self;
     _picker.dataSource=self;
