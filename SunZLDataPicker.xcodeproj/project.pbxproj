@@ -15,6 +15,7 @@
 		98D43EC11C04382C007286A0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 98D43EBF1C04382C007286A0 /* LaunchScreen.storyboard */; };
 		98D43ECC1C04382C007286A0 /* SunZLDataPickerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 98D43ECB1C04382C007286A0 /* SunZLDataPickerTests.m */; };
 		98D43ED71C04382C007286A0 /* SunZLDataPickerUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 98D43ED61C04382C007286A0 /* SunZLDataPickerUITests.m */; };
+		98D43EE71C0438D0007286A0 /* SunDataPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 98D43EE61C0438D0007286A0 /* SunDataPicker.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,8 @@
 		98D43ED21C04382C007286A0 /* SunZLDataPickerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SunZLDataPickerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		98D43ED61C04382C007286A0 /* SunZLDataPickerUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SunZLDataPickerUITests.m; sourceTree = "<group>"; };
 		98D43ED81C04382C007286A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		98D43EE51C0438D0007286A0 /* SunDataPicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SunDataPicker.h; sourceTree = "<group>"; };
+		98D43EE61C0438D0007286A0 /* SunDataPicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SunDataPicker.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +104,7 @@
 		98D43EB01C04382C007286A0 /* SunZLDataPicker */ = {
 			isa = PBXGroup;
 			children = (
+				98D43EE41C0438D0007286A0 /* picker */,
 				98D43EB41C04382C007286A0 /* AppDelegate.h */,
 				98D43EB51C04382C007286A0 /* AppDelegate.m */,
 				98D43EB71C04382C007286A0 /* ViewController.h */,
@@ -138,6 +142,15 @@
 				98D43ED81C04382C007286A0 /* Info.plist */,
 			);
 			path = SunZLDataPickerUITests;
+			sourceTree = "<group>";
+		};
+		98D43EE41C0438D0007286A0 /* picker */ = {
+			isa = PBXGroup;
+			children = (
+				98D43EE51C0438D0007286A0 /* SunDataPicker.h */,
+				98D43EE61C0438D0007286A0 /* SunDataPicker.m */,
+			);
+			path = picker;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -270,6 +283,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				98D43EE71C0438D0007286A0 /* SunDataPicker.m in Sources */,
 				98D43EB91C04382C007286A0 /* ViewController.m in Sources */,
 				98D43EB61C04382C007286A0 /* AppDelegate.m in Sources */,
 				98D43EB31C04382C007286A0 /* main.m in Sources */,
@@ -412,6 +426,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SunZLDataPicker/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sun.SunZLDataPicker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -423,6 +438,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SunZLDataPicker/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sun.SunZLDataPicker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
