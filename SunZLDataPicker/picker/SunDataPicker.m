@@ -239,7 +239,7 @@
             
             if (component==1) {
                 if ([_secondTitles count]>0) {
-                    _thirdTitles=_secondDict[_secondTitles[0]];
+                    _thirdTitles=_secondDict[_secondTitles[row]];
                 }else{
                     _thirdTitles=nil;
                 }
