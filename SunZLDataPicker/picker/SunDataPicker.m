@@ -52,7 +52,9 @@
     [self addSubview:_btn];
     self.layer.cornerRadius=7.f;
     self.layer.masksToBounds=YES;
-
+    _selectOne=0;
+    _selectTwo=0;
+    _selectThree=0;
   
     
 
@@ -101,9 +103,7 @@
     _oneTitles=nil;
     _thirdTitles=nil;
     _secondTitles=nil;
-    _selectOne=0;
-    _selectTwo=0;
-    _selectThree=0;
+ 
     
     //调整位置
     UIView * tar=(UIView *)target;
